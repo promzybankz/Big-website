@@ -1,19 +1,23 @@
-// const container = document.getElementById('container').addEventListener('click',
-//  loadData)
+// To show back to top button when the user scrools 50px from the top of the document
 
+const scrollbutton = document.getElementById('myBtn')
 
- const containerItem = document.getElementById('container-item')
+window.onscroll = function(){scrollFunction()}
 
-    const xhr = new XMLHttpRequest();
-
-
-xhr.onload = function(){
-    if (this.status === 200){
-        containerItem.innerHTML = xhr.responseText;
-    } else{
-        console.warn('Did not recieve 200 OK from response!')
+function scrollFunction(){
+    if (document.body.scrollTop > 50 ||
+    document.documentElement.scrollTop > 50){;
+        scrollbutton.style.display = "block"
+    }else{
+        scrollbutton.style.display = "none";
     }
 }
 
-xhr.open('get', 'blogpost.html')
-xhr.send()
+function topFunction(){
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For other Browsers
+}
+
+
+// WOW JS to animate
+new WOW().init();
