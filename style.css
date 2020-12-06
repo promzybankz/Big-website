@@ -387,9 +387,7 @@ label{
     
 }
 @media screen and (max-width:768px){
-    .none{
-        visibility: hidden;
-    }
+    
     .carousel{
         top: 20%;
     }
@@ -482,5 +480,8 @@ label{
     }
     .tech-story{
         padding: 8rem;
+    }
+    .none{
+        visibility: hidden;
     }
 }
