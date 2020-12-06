@@ -443,6 +443,9 @@ label{
     .form-item{
         width: 50%;
     }
+    .banner{
+        height: 60vh;
+    }
  .navbar-nav{
      margin: auto;
  } 
