@@ -14,7 +14,7 @@
 <body>
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg">
-            <a class="navbar-brand" href="#"><img src="Images/BiG.png" alt=""></a>
+            <a class="navbar-brand" href="index.html"><img src="Images/BiG.png" alt=""></a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
                </button>
@@ -24,14 +24,15 @@
                                <li class="nav-item">
                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                                </li>
-                               <li class="nav-item py-2 home dropdown">
-                               <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               <li class="nav-item py-2 dropdown">
+                               <a class="dropdown-toggle text-orange" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                    About Us
                                </a>
                                <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
                                    <a class="dropdown-item" href="#who">Who are we</a>
                                    <a class="dropdown-item" href="#vision">Vision / Mission</a>
-                                   <a class="dropdown-item" href="#">Our Scope</a>
+                                   <a class="dropdown-item" href="#scope">Our Scope</a>
+                                   <a class="dropdown-item" href="#team">Our Team</a>
                                </div>
                                <li class="nav-item">
                                        <a class="nav-link" href="blog.html">Blog</a>
@@ -39,23 +40,26 @@
                                <li class="nav-item">
                                    <a class="nav-link" href="#contact">Contact Us</a>
                                </li>
-                               <span class="line">|</span>
-                               <li class="nav-item mt-4 ml-lg-auto">
-                                       <a class="text-black" href="https://twitter.com/binary_labs?s=09"><i class="fab fa-twitter"></i></a>
-                                       <a class="text-black" href="https://instagram.com/binary_labs?igshid=16sl4pz78zadp"><i class="fab fa-instagram"></i></a>
-                                       <a class="text-black" href="https://web.facebook.com/binarygenerationlabs"><i class="fab fa-facebook-f"></i></a>
-                               </li>
                            </ul>
+                                <ul class="nav-item mt-4 ml-lg-auto">
+                                    <button class="rect d-block pl-3 pt-2 pb-2 pr-3 d-md-inline">
+                                        <a href="register.html">REGISTER</a>
+                                      </button> 
+                                  <span class="line none ml-3"></span>
+                                  <a class="text-black" href="https://twitter.com/binary_labs?s=09"><i class="fab fa-twitter"></i></a>
+                                  <a class="text-black" href="https://instagram.com/binary_labs?igshid=16sl4pz78zadp"><i class="fab fa-instagram"></i></a>
+                                  <a class="text-black" href="https://web.facebook.com/binarygenerationlabs"><i class="fab fa-facebook-f"></i></a>
+                                </ul>
            </nav>
-           <header class="container-fluid gray py-3" id="who">
-               <h2 class="wow animate__wobble">Who we are</h2>
+           <header class="container-fluid gray py-5" id="who">
+               <h2 class="pt-2 container">Who we are</h2>
            </header>
            <div class="row container justify-content-around align-items-center py-3 centers">
                 <div class="col-md-4 align-self-center pt-3 text-center">
                         <img class="small-image" src="images/BinaryGeneration Labs Logo 1.png" alt="logo-img">
                 </div>
                 <div class="col-md-6 align-self-center">
-                    <h2 class="text-center pt-4">Who we are</h2>
+                    <h2 class="text-center pt-5">Who we are</h2>
                     <div class="under-line mb-3 centers"></div>
                     <div class="">
                         <p>
@@ -73,8 +77,8 @@
                     </div>
                 </div>
            </div>
-           <section class="container-fluid gray mt-5 py-3" id="vision">
-                <h2>Our Vision and Mission</h2>
+           <section class="container-fluid gray mt-5 py-5" id="vision">
+                <h2 class="container">Our Vision and Mission</h2>
            </section>
             <div class="row container justify-content-around align-items-center py-3 centers">
                  <div class="col-md-4 align-self-center text-center pt-3">
@@ -103,12 +107,20 @@
                      </div>
                  </div>
             </div>
-            <section class="container-fluid gray mt-5 py-3" id="vision">
-                    <h2>Our Scope</h2>
+            <section class="container-fluid gray mt-5 py-5" id="scope">
+                    <h2 class="container">Our Scope</h2>
                </section>
                <h2 class="text-center pt-4">Our Scope</h2>
                <div class="under-line mb-5 centers"></div>
-                <aside class="container py-4">
+               
+                <aside class="container">
+                    <header class="banner2 row mb-5">
+                      <div class="banner2-inner">
+                          We organize  STEM/coding club centres to give students in-depth knowledge 
+                          of these fields, having critically examined that these particular courses are indeed beginners 
+                          friendly and suitable to train young minds.
+                      </div>
+                    </header>
                         <div class="row justify-content-center bg-black">
                                 <div class="col-md text-center py-4 scratch">
                                     <h4 class="pb-4">Scratch Programming</h4>
@@ -130,7 +142,7 @@
                                         <p>Python is an easy to learn programming
                                             language very similar to english language
                                             so suitable for students</p>
-                                            <img style="width: 131px; height: 106px;" src="images/python.png" alt="">                                                                                                                            
+                                            <img style="width: 131px; height: 106px;" src="images/python.png" alt="Python">                                                                                                                            
                                     </div>
                                 <div class="w-100"></div>
                                 <div class="col-md py-4 text-center web">
@@ -138,14 +150,14 @@
                                         <p>Website development is an advance skills,
                                            students are taught to build professional
                                            websites.</p>
-                                        <img style="width: 131px; height: 106px;" src="Images/web.png" alt="">                                                                                                                                                                                                             
+                                        <img style="width: 131px; height: 106px;" src="Images/web.png" alt="web">                                                                                                                                                                                                             
                                 </div>
                                 <div class="col-md py-4 text-center graphic">
                                         <h4 class="pb-4">Graphics Design</h4>
                                         <p>Graphic design is a craft where students 
                                            create visual content to communicate 
                                            messages.</p>
-                                        <img style="width: 131px; padding-top: 3rem;" src="Images/graphic.png" alt="">                                                                                                                                                                                                                                               
+                                        <img style="width: 131px; padding-top: 3rem;" src="Images/graphic.png" alt="graphic">                                                                                                                                                                                                                                               
                                 </div>
                                 <div class="w-100"></div>
                                 <div class="col-md py-4 text-center robotics">
@@ -153,76 +165,86 @@
                                         <p>Roboics is a skill with which students are
                                            introduced to building real life robots
                                            they can control.</p>
-                                           <img style="width: 131px;" src="Images/robotics.png" alt="">   
+                                           <img style="width: 131px;" src="Images/robotics.png" alt="robotics">   
                                 </div>
                                 <div class="col-md text-center py-5 align-self-center">
                                         <h4 class="text-white">More coming...</h4>                                                                                                                                                                                                             
                                 </div>
                         </div>
                 </aside>
-                <section  class="container-fluid gray mt-3 py-3" id="vision">
-                        <h2>Our Team</h2>
+                <section  class="container-fluid gray mt-5 py-5" id="team">
+                        <h2 class="container">Our Team</h2>
                 </section>
                 <div class="bg-team"></div>
-                <h2 class="text-center pt-4">Our Team</h2>
-                <div class="under-line mb-4 centers"></div>
+                <h2 class="text-center pt-5">Our Team</h2>
+                <div class="under-line mb-5 centers"></div>
                 <aside class="container">
                     <div class="row justify-content-center">
                         <div class="col text-center py-3">
-                            <img class="circle" src="Images/human.jpg" alt="">
-                            <h4 class="py-2">Bamisebi Pelumi</h4>
+                            <div class="circle-item text-center">
+                                <img src="Images/human.jpg" alt="Kemi" class="circle">
+                              </div>
+                            <h4 class="pt-4">Bamisebi Pelumi</h4>
                             <h6>Lead</h6>
                         </div>
                     </div>
                         <div class="col text-center py-3">
-                                <img class="circle" src="Images/human.jpg" alt="">
+                            <div class="circle-item text-center">
+                                <img src="Images/human.jpg" alt="Kemi" class="circle">
+                              </div>
                                 <h4 class="py-2">Jonathan Emmanuel</h4>
                                 <h6>Braniac</h6>
                         </div>
                         <div class="col text-center py-3">
-                                <img class="circle" src="Images/human.jpg" alt="">
+                            <div class="circle-item text-center">
+                                <img src="Images/human.jpg" alt="Kemi" class="circle">
+                              </div>
                                 <h4 class="py-2">Patrick Jeremiah</h4>
                                 <h6>Technical Lead</h6>
                         </div>
                         <div class="col text-center py-3">
-                                    <img class="circle" src="Images/human.jpg" alt="">
+                            <div class="circle-item text-center">
+                                <img src="Images/human.jpg" alt="Kemi" class="circle">
+                              </div>
                                     <h4 class="py-2">Isaiah Adeleke</h4>
                                     <h6>Business Developer</h6>
                         </div>
                         <div class="col text-center py-3">
-                                <img class="circle" src="Images/human.jpg" alt="">
+                            <div class="circle-item text-center">
+                                <img src="Images/human.jpg" alt="Kemi" class="circle">
+                              </div>
                                 <h4 class="py-2">Isogun Oluwakemi</h4>
                                 <h6>Web Developer</h6>
                         </div>
                     </div>
                 </aside>
-                <section class="container pt-md-5 pb-md-5" id="contact">
-                        <div class="row py-3 justify-content-around">
-                          <div class="col-md-3 d-flex">
-                            <i class="fab fa-whatsapp align-self-center"></i>
-                            <span class="align-self-center">
-                                <h5>Telephone</h5>
-                                <a class="text-dark" href="tel:+2349030113621">+2349030113621</a>
+                <section class="container-fluid pt-md-5 pb-md-5" id="contact">
+                    <div class="row py-3 ml-2 justify-content-around">
+                      <div class="col-md-3 d-flex">
+                        <i class="fab fa-whatsapp align-self-center"></i>
+                         <span class="align-self-center pl-3">
+                             <h5>Telephone</h5>
+                            <a class="text-dark" href="tel:+2349030113621">+2349030113621</a>
+                        </span>
+                      </div>
+                      <span class="side-line none"></span>
+                      <div class="col-md-3 d-flex">
+                          <i class="far fa-envelope align-self-center"></i> 
+                           <span class="align-self-center pl-3">
+                              <h5>Email</h5>
+                              <a class="text-dark" href="mailto:hi@binarygenerationlabs.com">hi@binarygenerationlabs.com</a>
+                          </span>
+                        </div>
+                        <span class="side-line none"></span>
+                        <div class="col-md-3 d-flex">
+                            <i class="fas fa-map-marker-alt align-self-center"></i> 
+                             <span class="align-self-center pl-3">
+                                 <h5>ADDRESS</h5>
+                                <P>Airforce 1, off stateline Futa Southgate, Akure, Ondo State, Nigeria.</P>
                             </span>
                           </div>
-                          <span class="side-line none"></span>
-                          <div class="col-md-3 d-flex">
-                              <i class="far fa-envelope align-self-center"></i>
-                              <span class="align-self-center">
-                                  <h5>Email</h5>
-                                  <a class="text-dark" href="mailto:hi@binarygenerationlabs.com">hi@binarygenerationlabs.com</a>
-                              </span>
-                            </div>
-                            <span class="side-line none"></span>
-                            <div class="col-md-3 d-flex">
-                                <i class="fas fa-map-marker-alt align-self-center"></i> 
-                                <span class="align-self-center">
-                                    <h5>ADDRESS</h5>
-                                    <P>Airforce 1, off stateline Futa Southgate, Akure, Ondo State, Nigeria.</P>
-                                </span>
-                              </div>
-                        </div>
-                      </section>
+                    </div>
+                  </section>
            <section class="gray container-fluid mt-4 pt-5">
                 <h3 class="text-center">
                   Subscribe to our Newsletter
@@ -230,12 +252,12 @@
                 </h3>
                 <div class="under-line centers mb-3"></div>
                 <form action="" class="form-container">
-                  <input type="email" name="" id="" placeholder="ENTER YOUR EMAIL">
+                  <input type="email" class="form-input" name="" id="" placeholder="ENTER YOUR EMAIL">
                   <input class="rect" type="button" value="Subscribe">
                 </form>
                 <div class="others">
                   <ul>
-                    <li><a href="https://paystack.com/pay/6dch35ah2n">How to support</a></li>
+                    <li>How to support</li>
                     <li><a href="https://paystack.com/pay/6dch35ah2n">Donate for outside school clubs</a></li>
                     <li><a href="become.html">Become a Tutor</a></li>
                     <li><a href="partner.html">Partner with us</a></li>
@@ -247,17 +269,17 @@
               </button>
               <footer class="container-fluid">
                 <div class="row justify-content-around">
-                  <div class="col-3 col-md-2">
-                    <img src="Images/BiG.png" alt="logo">
+                  <div class="col-lg-1 text-center">
+                    <img class="navbar-brand" src="Images/BIG.png" alt="logo">
                   </div>
-                  <div class="col-9 col-md-5 align-self-center text-center">
+                  <div class=" col-lg-7 align-self-center text-center">
                     <p>&COPY; 2020 Binary Generation Labs</p>
                   </div>
-                  <div class="col-md-4  text-center">
-                    <ul class="d-flex justify-content-around">
-                        <li><a href="https://twitter.com/binary_labs?s=09"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://instagram.com/binary_labs?igshid=16sl4pz78zadp"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://web.facebook.com/binarygenerationlabs"></i></a></li>
+                  <div class=" col-lg-3 align-self-center text-center">
+                    <ul class="d-flex justify-content-around ">
+                      <li><a href="https://twitter.com/binary_labs?s=09"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="https://instagram.com/binary_labs?igshid=16sl4pz78zadp"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="https://web.facebook.com/binarygenerationlabs"><i class="fab fa-facebook"></i></a></li>
                       <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
                       <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
                     </ul>
