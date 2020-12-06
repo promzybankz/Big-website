@@ -387,9 +387,7 @@ label{
     
 }
 @media screen and (max-width:768px){
-    .none{
-        visibility: hidden;
-    }
+    
     .carousel{
         top: 20%;
     }
@@ -410,6 +408,9 @@ label{
     }
     .rect{
         margin-bottom: 1rem;
+    }
+    .none{
+        visibility: hidden;
     }
 }
 @media screen and (min-width:768px){
