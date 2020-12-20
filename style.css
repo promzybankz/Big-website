@@ -23,7 +23,7 @@ img{
     font-weight: 500;
 }
 .bg{
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255);
 }
 .icon-black{
     color: black;
@@ -34,6 +34,10 @@ img{
 .dropdown-item{
     color: white;
     background-color: black;
+}
+.dropdown-item:hover{
+    background-color:transparent;
+    color: rgb(117, 116, 116);
 }
 .fa-bars{
     font-size: 2rem;
@@ -70,6 +74,12 @@ img{
     margin-top: 1rem;
     padding-left: 2rem;
     text-transform: uppercase;
+}
+.nav-item a{
+    font-weight: bold;
+}
+.dropdown-menu{
+    margin-top: 1rem;
 }
 .bg-black{
     background-color: #000000;
@@ -127,10 +137,12 @@ img{
 .text{
     padding: 1rem;
     font-family: Arial;
-    font-size: 1.4rem;
+    font-weight: bold;
+    font-size: 1.5rem;
     line-height: px;
     color: #ffffff;
 }
+
 .rect{
     background-color: var(--secondary);
     border: none;
@@ -145,8 +157,16 @@ img{
     text-decoration: none;
     color: #ffffff;
 }
+.rect-btn{
+    padding: 1rem;
+}
 button:focus{
     outline: transparent;
+}
+.p-relative{
+    position: relative;
+    text-align: center;
+    top: 30%;
 }
 /* Button Down */
 .down-button{ 
@@ -160,6 +180,10 @@ button:focus{
 }
 .down-button i:hover{
     color: var(--secondary);
+}
+#here h3{
+    width: 95%;
+    margin: auto;
 }
 input:focus{
     outline: transparent;
@@ -194,13 +218,13 @@ input:focus{
 .italic{
     font-style: italic;
 }
-.circle{
-    border-radius: 50%;
-    width: 100%;
-}
 .circle-item{
     border-radius: 50%;
-    width: 50%;
+    background-image: url('Images/human.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
     margin: auto;
 }
 .under-line{
@@ -358,6 +382,28 @@ label{
     border-radius: 2rem;
     margin-top: 1rem;
 }
+.carousel-control{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+}
+.carousel-control:hover{
+    color: #fff;
+    text-decoration-line: none;
+}
+.next{
+    right: 0;
+}
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -384,7 +430,9 @@ label{
     .bg-team{
         height: 30vh;
     }
-    
+    .banner{
+        height: 70vh;
+    }
 }
 @media screen and (max-width:768px){
     
@@ -412,6 +460,14 @@ label{
     .none{
         visibility: hidden;
     }
+    .d-flex span{
+        padding-left: 1rem;
+    }
+}
+@media sceen and (max-width:1026px){
+    .none-md{
+        visibility: hidden;
+    }
 }
 @media screen and (min-width:768px){
     .nav-item{
@@ -429,7 +485,7 @@ label{
      }
      .carousel-item h6{
          margin: auto;
-         font-size: 1.5rem;
+         font-size: 2rem;
      }
     .side-line{
         margin-top: 2rem;
@@ -438,7 +494,7 @@ label{
         width: 35vw;
     }
     .circle{
-        width: 40%;
+        /* width: 40%; */
     }
     .col-md-2 img{
         width: 5rem;
@@ -456,12 +512,18 @@ label{
     width: 80%;
     font-weight: 700;
 }  
-.carousel-item h6{
-    width: 75%;
+#here h3{
+    width: 70%;
+}
+.d-flex i{
+    padding-right: 0.5rem;
     font-size: 1.5rem;
 }
 }
 @media screen and (min-width:1024px){
+    .nav-item{
+        margin-top: 0.5rem;
+    }
     .bg-team{
         height: 60vh;
     }
@@ -475,11 +537,11 @@ label{
         padding-left: 3rem;
     }
     .text-black{
-        padding: 2rem;
+        padding: 0.5rem;
     }
     .carousel-item h6{
-        width: 70%;
-        font-size: 2rem;
+        width: 73%;
+        font-size: 3rem;
     }
     .banner{
         height: 85vh;
@@ -487,5 +549,7 @@ label{
     .tech-story{
         padding: 8rem;
     }
-    
+    #here h3{
+        width: 50%;
+    }
 }
