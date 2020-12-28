@@ -142,7 +142,6 @@ img{
     line-height: px;
     color: #ffffff;
 }
-
 .rect{
     background-color: var(--secondary);
     border: none;
@@ -183,6 +182,9 @@ button:focus{
 }
 #here h3{
     width: 95%;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 36px;
     margin: auto;
 }
 input:focus{
@@ -214,6 +216,8 @@ input:focus{
 }
 .light{
     font-weight: 400;
+    width: 70%;
+    margin: auto;
 }
 .italic{
     font-style: italic;
@@ -427,6 +431,9 @@ label{
       padding-top: 0.5rem;
   }
 @media screen and (max-width:520px){
+    .story-container h3{
+       
+    }
     .bg-team{
         height: 30vh;
     }
@@ -463,6 +470,12 @@ label{
     .d-flex span{
         padding-left: 1rem;
     }
+    .story-container h3{
+        margin-left: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
 }
 @media sceen and (max-width:1026px){
     .none-md{
@@ -510,7 +523,7 @@ label{
  } 
  .story-container h3{
     width: 80%;
-    font-weight: 700;
+    font-weight: 500;
 }  
 #here h3{
     width: 70%;
@@ -550,6 +563,6 @@ label{
         padding: 8rem;
     }
     #here h3{
-        width: 50%;
+        width: 40%;
     }
 }
