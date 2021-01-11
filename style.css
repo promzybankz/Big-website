@@ -1,0 +1,568 @@
+:root {
+    /* colors */
+    --primary: #00000;
+    --secondary: #F7931E;
+    --tertiary: #EBEBEB;
+}
+@font-face{
+    font-family: quicksand;
+    src: url("static/Quicksand-Medium.ttf");
+}
+body{
+    scroll-behavior: smooth;
+}
+.container{
+    font-family: quicksand;
+}
+img{
+    width: 100%;
+}
+.line{
+    padding:1.2rem 1px;
+    background-color: #EBEBEB;
+    font-weight: 500;
+}
+.bg{
+    background-color: rgb(255, 255, 255);
+}
+.icon-black{
+    color: black;
+}
+.fa-chevron-left, .fa-chevron-right{
+    font-size: 2rem;
+}
+.dropdown-item{
+    color: white;
+    background-color: black;
+}
+.dropdown-item:hover{
+    background-color:transparent;
+    color: rgb(117, 116, 116);
+}
+.fa-bars{
+    font-size: 2rem;
+    color: var(--secondary);
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-brand{
+    width: 8rem;
+    margin-left: 1rem;
+}
+.nav-item button{
+    background-color: #F7931E;
+}
+.nav-link{
+    color: black;
+}
+.text-orange{
+    color: #F7931E;
+}
+.text-orange:hover{
+    text-decoration: none;
+    color: var(--secondary);
+}
+.home a{
+    color: var(--secondary);
+}
+.home:hover{
+    text-decoration: none;
+    color: var(--secondary);
+}
+.nav-item{
+    margin-top: 1rem;
+    padding-left: 2rem;
+    text-transform: uppercase;
+}
+.nav-item a{
+    font-weight: bold;
+}
+.dropdown-menu{
+    margin-top: 1rem;
+}
+.bg-black{
+    background-color: #000000;
+}
+.text-black{
+    color: black;
+    padding-right: 1rem;
+}
+.banner{
+    margin-top: 5rem;
+    background-image: url('Images/banner.png');
+    background-size: cover;
+    height: 55vh;
+    position: relative;
+    color: white;
+}
+.banner::before{
+    position: absolute;
+    content: "";
+    opacity: 0.6;
+    background-color: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.banner2{
+    background-image: url('Images/scope.jpg');
+    background-size: cover;
+    height: 30vh;
+    position: relative;
+    color: white;
+}
+.banner2::before{
+    position: absolute;
+    content: "";
+    opacity: 0.6;
+    background-color: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.banner2-inner{
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.carousel{
+    top: 30%;
+}
+.carousel h2{
+    font-family: 'Poppins', sans-serif !important;
+}
+.text{
+    padding: 1rem;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: px;
+    color: #ffffff;
+}
+.rect{
+    background-color: var(--secondary);
+    border: none;
+    font-size: 1rem;
+    padding: 0.3rem;
+    color: white;
+}
+.rect:hover{
+    background-color: rgba(247, 147, 30, 0.9);
+}
+.rect a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.rect-btn{
+    padding: 1rem;
+}
+button:focus{
+    outline: transparent;
+}
+.p-relative{
+    position: relative;
+    text-align: center;
+    top: 30%;
+}
+/* Button Down */
+.down-button{ 
+    position: absolute;
+    bottom: -6%;
+    width: 100%;
+    text-align: center;
+}
+.down-button i{
+    color: #EBEBEB;
+}
+.down-button i:hover{
+    color: var(--secondary);
+}
+#here h3{
+    width: 95%;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 36px;
+    margin: auto;
+}
+input:focus{
+    outline: transparent;
+}
+.gray{
+    background-color: #f9f9f9;
+    color: #000000;
+    font-size: 1rem;
+    line-height: 36px; 
+    font-weight: 500;
+    font-style: normal;
+}
+.gray h2{
+    font-family: 'Poppins', sans-serif;
+}
+.orange{
+    margin: auto;
+    color: var(--secondary);
+}
+#container:hover{
+    text-decoration-line: none;
+}
+.bold{
+    font-family: Arial;
+    font-weight: bold;
+    line-height: 7px;
+    font-size: 1.5rem;
+}
+.light{
+    font-weight: 400;
+    width: 70%;
+    margin: auto;
+}
+.italic{
+    font-style: italic;
+}
+.circle-item{
+    border-radius: 50%;
+    background-image: url('Images/human.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+.under-line{
+    width: 5rem;
+    margin-top: -0.2rem;
+    margin-bottom: 1rem;
+    padding: 1px;
+    background-color: var(--secondary);
+}
+.under-line-black{
+    width: 5rem;
+    margin-top: -0.3rem;
+    margin-bottom: 1rem;
+    padding: 1.5px;
+    background-color: #000000;
+}
+.centers{
+    margin: auto;
+}
+.side-line{
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;
+    margin-left: 2rem;
+    padding: 1px;
+    height: 3rem;
+}
+.tech-story{
+    background-image: url("Images/human.jpg");
+    background-size: cover;
+    padding: 5rem;
+    color: white;
+    position: relative;
+}
+.tech-story::before{
+    position: absolute;
+    content: "";
+    opacity: 0.6;
+    background-color: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.tech-story span{
+    position: relative;
+}
+.tech-story span p{
+    text-align: center;
+}
+.d-flex i{
+    font-size: 2rem;
+    padding-right: 0.7rem;
+    color: var(--secondary);
+}
+.form-container input{
+    border:solid var(--secondary) 1px;
+    display: block;   
+    margin:1rem auto;
+    width: 80%;
+    padding-left: 1rem;
+}
+.form-input{
+    background-color: transparent;
+    font-size: 0.8rem;
+}
+.others ul{
+    list-style: none;
+    margin-left: -3rem;
+    text-align: center;
+}
+.others ul li a{
+    color: black;
+    font-weight: 400;
+}
+.others ul li a:hover{
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+.d-flex li{
+    list-style: none;
+    
+}
+.d-flex li a i{
+    color: #000;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+.d-flex li a i:hover{
+    color: #F7931E;
+}
+#who{
+    margin-top: 4rem;
+}
+.scratch{
+    background-color: #12AEF8;
+    color: #ffffff;
+}
+.python{
+    background-color: #355C79;
+    color: #ffffff;
+}
+.web{
+    background-color:#2997CC;
+    color: #ffffff;
+}
+.graphic{
+    background-color: #ffffff;
+    color: #000000;
+}
+.robotics{
+    color: #ffffff;
+    background-color: #BFB9BA;
+}
+.bg-team{
+    background-image: url('Images/team.jpeg');
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+}
+.card{
+    box-shadow: 9px 9px 9px -9px;
+    border-radius: 0;
+    margin-top: 2rem;
+}
+.card-img-top{
+    border-radius: 0;
+}
+.text-ash{
+    color: gray;
+    line-height: 20px;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.form-item{
+    display: block;
+    width: 100%;
+    border:solid 1px var(--secondary);
+    padding: 0.7rem;
+}
+label{
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.col-9 h6{
+    color: gray;
+}
+.send{
+    background-color: var(--secondary);
+    font-weight: 500;
+    color: #ffffff;
+    border: none;
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+.carousel-control{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+}
+.carousel-control:hover{
+    color: #fff;
+    text-decoration-line: none;
+}
+.next{
+    right: 0;
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 3rem; /* Place the button at the bottom of the page */
+    right: 1rem; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: black; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 0.7rem; /* Some padding */
+    border-radius: 0.5rem; /* Rounded corners */
+    font-size: 1.5rem; /* Increase font size */
+  }
+  #myBtn:hover {
+    background-color: var(--secondary); 
+  }
+  .col-lg-7 p{
+      color: rgb(119, 116, 116);
+      padding-top: 0.5rem;
+  }
+@media screen and (max-width:520px){
+    .story-container h3{
+       
+    }
+    .bg-team{
+        height: 30vh;
+    }
+    .banner{
+        height: 70vh;
+    }
+}
+@media screen and (max-width:768px){
+    
+    .carousel{
+        top: 20%;
+    }
+    .line{
+        display: none;
+    }
+    .navbar-nav{
+        display: flex;
+    }
+    .tech-story{
+        margin-top: 2rem;
+    }
+    .small-image{  
+        width: 70%;
+    }
+    #who{
+        margin-top: 5rem;
+    }
+    .rect{
+        margin-bottom: 1rem;
+    }
+    .none{
+        visibility: hidden;
+    }
+    .d-flex span{
+        padding-left: 1rem;
+    }
+    .story-container h3{
+        margin-left: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+}
+@media sceen and (max-width:1026px){
+    .none-md{
+        visibility: hidden;
+    }
+}
+@media screen and (min-width:768px){
+    .nav-item{
+        padding-left: 2rem;
+    }
+    .text-black{
+        padding: 1rem;
+    } 
+    .rect{
+         font-weight: bold;
+     }
+     .carousel-item button{
+         padding: 2.5rem;
+         margin-top: 1rem;
+     }
+     .carousel-item h6{
+         margin: auto;
+         font-size: 2rem;
+     }
+    .side-line{
+        margin-top: 2rem;
+    }
+    .form-container input{
+        width: 35vw;
+    }
+    .circle{
+        /* width: 40%; */
+    }
+    .col-md-2 img{
+        width: 5rem;
+    }
+    .form-item{
+        width: 50%;
+    }
+    .banner{
+        height: 60vh;
+    }
+ .navbar-nav{
+     margin: auto;
+ } 
+ .story-container h3{
+    width: 80%;
+    font-weight: 500;
+}  
+#here h3{
+    width: 70%;
+}
+.d-flex i{
+    padding-right: 0.5rem;
+    font-size: 1.5rem;
+}
+}
+@media screen and (min-width:1024px){
+    .nav-item{
+        margin-top: 0.5rem;
+    }
+    .bg-team{
+        height: 60vh;
+    }
+    .banner2-inner{
+        width: 70%;
+    }
+    
+}
+@media screen and (min-width:1100px){
+    .nav-item{
+        padding-left: 3rem;
+    }
+    .text-black{
+        padding: 0.5rem;
+    }
+    .carousel-item h6{
+        width: 73%;
+        font-size: 3rem;
+    }
+    .banner{
+        height: 85vh;
+    }
+    .tech-story{
+        padding: 8rem;
+    }
+    #here h3{
+        width: 40%;
+    }
+}
